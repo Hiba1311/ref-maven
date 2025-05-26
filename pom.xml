@@ -4,7 +4,7 @@
   <groupId>com.example</groupId>
   <artifactId>hello</artifactId>
   <version>1.0</version>
-  <packaging>war</packaging> <!-- 💡 Added this -->
+  <packaging>war</packaging> 
 
   <build>
     <plugins>
