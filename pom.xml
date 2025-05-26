@@ -1,8 +1,11 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.example</groupId>
   <artifactId>hello</artifactId>
   <version>1.0</version>
+  <packaging>war</packaging> <!-- 💡 Added this -->
+
   <build>
     <plugins>
       <plugin>
@@ -12,6 +15,16 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+        </configuration>
+      </plugin>
+
+      <!-- Optional: WAR Plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
     </plugins>
