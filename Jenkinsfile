@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Hiba1311/ref-maven'
-            }
-        }
-
         stage('Build with Maven') {
             steps {
                 sh 'mvn clean package'
